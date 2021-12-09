@@ -44,7 +44,7 @@ function card(divprincipal, produto) {
     DivInfo.append(old);
 
     let price = document.createElement('h4');
-    price.innerHTML = `R$${produto.price},00`;
+    price.innerHTML = `Por: R$${produto.price},00`;
 
     DivInfo.append(price);
 
