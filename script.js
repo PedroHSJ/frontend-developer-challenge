@@ -104,7 +104,7 @@ function Page2() {
         DivInfo.append(old);
 
         let price = document.createElement('h4');
-        price.innerHTML = `R$${produto.price},00`;
+        price.innerHTML = `Por: R$${produto.price},00`;
 
         DivInfo.append(price);
 
@@ -125,3 +125,15 @@ function Page2() {
     let btn = document.getElementById('mais');
     btn.parentNode.removeChild(btn)
 }
+
+const toggle = document.getElementsByClassName("switch")[0];
+const theme = window.localStorage.getItem("theme");
+
+
+toggle.addEventListener("change", () => {
+    document.body.classList.toggle("dark");
+    if (theme === "dark") {
+      window.localStorage.setItem("theme", "light");
+    } else window.localStorage.setItem("theme", "dark");
+  });
+

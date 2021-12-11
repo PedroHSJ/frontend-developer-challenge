@@ -5,32 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>Document</title>
 </head>
 
 <body>
 
+    <nav>
+        <span>Linx <i class="fas fa-heart"></i></span>
+        
+         <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+          </label> 
+    </nav>
     <header>
         <h3>uma seleção de produtos</h3>
         <h1>especial para você</h1>
         <h4>Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</h4>
-
-        <ul>
-            <li><a href="">Conheça a Linx</a></li>
-            <li><a href="">Ajude o algorítimo</a></li>
-            <li><a href="">Seus produtos</a></li>
-            <li><a href="">Compartilhe</a></li>
-        </ul>
-
     </header>
 
 
 
 
     <main>
+
+        <h1>&#8213;&#8213; Nos ajude &#8213;&#8213;</h1>
 
         <section id="formulario">
             <section id="texto">
@@ -42,14 +44,18 @@
                     consectetur.
                     Praesent bibendum arcu risus, sit amet iaculis ex tempus quis. Cras et erat ut tellus vulputate
                     tincidunt.
-                    Aenean lacinia euismod augue vel egestas. Class aptent taciti sociosqu ad litora torquent per conubia
+                    Aenean lacinia euismod augue vel egestas. Class aptent taciti sociosqu ad litora torquent per
+                    conubia
                     nostra, per inceptos himenaeos. Vestibulum vel urna tortor. Vivamus et arcu non felis tristique
                     eleifend.
-                    Morbi eu condimentum urna. Curabitur eu magna eget turpis condimentum ultrices. Suspendisse quis lorem
-                    ultricies, pulvinar purus sed, egestas erat. Etiam ultricies a ante vehicula pharetra. Quisque ut neque
+                    Morbi eu condimentum urna. Curabitur eu magna eget turpis condimentum ultrices. Suspendisse quis
+                    lorem
+                    ultricies, pulvinar purus sed, egestas erat. Etiam ultricies a ante vehicula pharetra. Quisque ut
+                    neque
                     mattis, consequat velit ut, ultrices orci. Nulla varius elementum erat vel pharetra. Aenean sit amet
                     nisi
-                    diam. Morbi viverra, magna ac luctus commodo, odio ante suscipit libero, at mattis augue est vel metus.
+                    diam. Morbi viverra, magna ac luctus commodo, odio ante suscipit libero, at mattis augue est vel
+                    metus.
                 </p>
             </section>
 
@@ -63,46 +69,45 @@
                 <input type="radio" id="masc" name="sex" value="masculino">
                 <label for="masc">Masculino</label>
                 <input type="radio" id="fem" name="sex" value="feminino">
-                <label for="fem">Feminino</label>
+                <label for="fem">Feminino</label><br>
 
-                <input id="sub" type="submit" value="Enviar">
+                <input id="sub" class="sub" type="submit" value="Enviar">
 
             </form>
         </section>
 
 
         <div id="conteudo">
-            <h1 class="titulo">-------------------- Sua seleção --------------------</h1>
+            <h1 class="titulo">&#8213;&#8213; Sua seleção &#8213;&#8213;</h1>
             <div id="listadeprodutos"></div>
 
+            <button id="mais" class="sub" onclick="Page2()">Ainda mais produtos aqui!</button>
+    
+            <div id="listadois"></div>
         </div>
-        <button id="mais" onclick="Page2()">Ainda mais produtos aqui!</button>
-
-        <div id="listadois"></div>
 
 
         <div id="compartilhe">
-            <h1 class="titulo">------------- Compartilhe a novidade -------------</h1>
+            <h1 class="titulo"> Compartilhe a novidade </h1>
             <h2>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</h2>
-        
+
             <form action="">
-                
+
                 <label for="nomeamigo">Nome do seu amigo:</label>
                 <input type="text" name="nomeamigo" id="nomeamigo">
                 <label for="emailamigo">E-mail dele:</label>
                 <input type="email" name="emailamigo" id="emailamigo">
-            
-                <input id="enviaragora" type="button" value="Enviar agora">
-            
+                <input id="enviaragora" class="sub"type="button" value="Enviar agora">
+
             </form>
-        
-        
+
+
         </div>
 
-        <footer>
-            <span>Pedro Henrique 2021<br> Teste frontend Linx Impulse</span>
-        </footer>
     </main>
+    <footer>
+        <span>Pedro Henrique 2021<br> Teste frontend Linx Impulse</span>
+    </footer>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="script.js"></script>
